@@ -1,0 +1,22 @@
+.main-search-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.main-search {
+	font-size: 10px;
+	text-transform: uppercase;
+	border-radius: 1px;
+}
+
+.main-search .form-inline .input-group {
+	width: 100%;
+}
+
+.main-search .form-inline .input-group .form-control {
+	text-align: center;
+}
