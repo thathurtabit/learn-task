@@ -18,8 +18,23 @@
 	background: $brand-primary;
 	color: $white;
 	cursor: pointer;
+	padding: 0.7rem 1rem;
+	border: 0;
 
 	&:hover {
 		background: lighten($brand-primary, 3%);
+	}
+}
+
+.main-search .form-inline {
+	box-shadow: 0 3px 3px rgba(0,0,0,0.05);
+}
+
+.main-search .form-inline .form-control {
+	padding: 0.7rem;
+	border: 0;
+
+	&::placeholder {
+		color: lighten($gray, 50%);
 	}
 }

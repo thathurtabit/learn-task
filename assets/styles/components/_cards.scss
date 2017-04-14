@@ -3,3 +3,68 @@
 	margin-bottom: 3rem;
 }
 
+.card {
+	&:hover .fa {
+		transform: scale(1.3);
+	}
+	&:hover .card-img-top::before {
+		background: $brand-primary;
+		color: $body-color;
+		transform: scale(8);
+	}
+}
+
+.card-title {
+	color: $brand-primary;
+}
+
+.card-img-top {
+	height: 150px;
+	background: #7b858e;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+
+	.fa {
+		transition: transform $transition-time $transition-type;
+		transform: scale(1);
+		color: $white;
+		font-size: 1rem;
+		border-radius: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	&::before {
+		transition: transform $transition-time $transition-type;
+		content: "";
+		transform: scale(1);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -25px;
+		margin-top: -25px;
+		background: rgba(255,255,255,0.1);
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+		z-index: 1;
+	}
+}
+
+.card-block {
+	text-align: center;
+}
+
+.card-text {
+	color: lighten($body-color, 15%);
+	line-height: 1.3;
+	font-size: 15px;
+}

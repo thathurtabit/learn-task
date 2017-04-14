@@ -1,3 +1,9 @@
+a:link,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+
 body {
 	background: darken($white, 3%);
 	overflow-x: hidden;
