@@ -52,8 +52,6 @@
               <div class="row">
                 <nav class="breadcrumb">
                   <a class="breadcrumb-item" href="<?php echo $root ?>" title="Learn">Learn</a>
-                  <a class="breadcrumb-item" href="<?php echo $root ?>/category" title="Category">Category</a>
-                  <a class="breadcrumb-item" href="<?php echo $root ?>/single" title="Single">Single</a>
                 </nav>
               </div>
 

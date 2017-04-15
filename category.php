@@ -13,86 +13,126 @@
         ?>
 
         <div class="barba-container">
-          <div id="page-cover" class="page page--home sps">
+          <div id="page-cover" class="page page--category">
           
-          
-            
-      			<div class="jumbotron mt-3">
-              <h1 class="d-flex display-3">Learn</h1>
-              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-              <hr class="my-4">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-              </p>
-            </div>
+            <!-- PAGE HEADER -->
+            <div class="jumbotron text-center">
+              <div class="ami-intro__text">
+                  <p>Knowledge<br/> is power!</p>
+              </div>
+              <div class="ami-intro">
+                <div class="ami-intro__cover-img">
+                  <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
+                </div>
 
-            <div class="container mt-3">
-            <div class="row">
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+              </div>
+              <h1 class="display-3 text-center">Developer Documentation</h1>
+              <p>What you need to know to integrate with Customer.io</p>
+
+              <!-- MAIN SEARCH WRAP -->
+              <div class="main-search-wrap">
+                <div class="main-search col-sm-8 justify-content-md-center col-md-6 col-lg-5 col-xl-3">
+                  <form class="form-inline">
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Search" />
+                      <button class="btn input-group-addon" type="submit"><span class="sr-only">Search</span><i class="fa fa-search"></i></button>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </div>
-          </div>
+              <!-- / MAIN SEARCH WRAP -->
 
-          <div class="container mt-3">
-            <div class="row">
+            </div>
+            <!-- / PAGE HEADER -->
+            
+
+            <!-- MAIN CONTENT -->
+            <div class="container main-page">
               
-              <ul class="list-unstyled">
-                <li class="media">
-                  <img class="d-flex mr-3" src="http://placehold.it/80x80" alt="Generic placeholder image">
-                  <div class="media-body">
-                    <h5 class="mt-0 mb-1">List-based media object</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                  </div>
-                </li>
-                <li class="media my-3">
-                  <img class="d-flex mr-3" src="http://placehold.it/80x80" alt="Generic placeholder image">
-                  <div class="media-body">
-                    <h5 class="mt-0 mb-1">List-based media object</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                  </div>
-                </li>
-                <li class="media">
-                  <img class="d-flex mr-3" src="http://placehold.it/80x80" alt="Generic placeholder image">
-                  <div class="media-body">
-                    <h5 class="mt-0 mb-1">List-based media object</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                  </div>
-                </li>
-              </ul>
+              <div class="row">
+                <nav class="breadcrumb">
+                  <a class="breadcrumb-item" href="<?php echo $root ?>" title="Learn">Learn</a>
+                  <a class="breadcrumb-item" href="<?php echo $root ?>/category" title="Category">Developer Documentaton</a>
+                  
+                </nav>
+              </div>
+
+              <div class="row">
+                <h2 class="sub-title text-center">Sending Data Into Customer<span class="bp">.io</span></h2>
+              </div>
+            
+            <div class="row">
+
+  
+Integrating with Customer.io
+
+Planning Your Integration: Guide to Mapping Data in Customer.io
+
+Importing old data in to Customer.io
+
+Send data using the Javascript Snippet
+
+Libraries to help get analytics data into Customer.io
+
+Using Customer.io with Rails
+
+
+
+<div class="row">
+  <h2 class="sub-title text-center">Integrating With <span class="bp">3rd</span> Parties</h2>
+</div>
+
+Using Customer.io with Mixpanel or KISSMetrics
+
+Getting Data Out Of Customer.io
+
+Segment Sources
+
+Send Data to a Data Warehouse with Stitch
+
+Email Webhooks
+
 
             </div>
+            
+            <hr />
+
+            <div id="split-meta-content" class="split-meta-content container mt-5">
+              <div class="row">
+                
+                <div class="col-md-6 split-meta-content__col">
+                    <a href="<?php echo $root ?>/category" class="split-meta-content__block">
+                      <div class="ami-meta">
+                        <div class="ami-meta__cover-img">
+                          <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
+                        </div>
+                      </div>
+                     <h3 class="split-meta-content__block-h">Need some help?</h3>
+                      <p class="split-meta-content__block-p">If you have questions or can't find what you're looking for, we're here for you. Click here to get in touch!</p>
+                    </a>
+                </div>
+
+                <div class="col-md-6 split-meta-content__col">
+                    <a href="<?php echo $root ?>/category" class="split-meta-content__block">
+                      <div class="ami-meta">
+                        <div class="ami-meta__cover-img">
+                          <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
+                        </div>
+                      </div>
+                      <h3 class="split-meta-content__block-h">Keep on learning</h3>
+                      <p class="split-meta-content__block-p">Discover ways to communicate with your customers to increase engagement on the Customer.io blog.</p>
+                    </a>                  
+                </div>
+
+              </div>
+            </div>
+
+
           </div>
+
+          <!-- / MAIN CONTENT -->
+
+          
                                                 
           
         </div><!-- /.content -->
