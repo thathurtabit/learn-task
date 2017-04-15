@@ -31,10 +31,17 @@
 }
 
 .main-search .form-inline .form-control {
+	transition: box-shadow $transition-time ease-out;
 	padding: 0.7rem;
 	border: 0;
+	color: $brand-primary;
 
 	&::placeholder {
 		color: lighten($gray, 50%);
+	}
+
+	&:focus {
+		box-shadow: 0 0 10px rgba(255,255,255,0.5), inset 3px 0 0 $ami-gray;
+		color: $body-color;
 	}
 }

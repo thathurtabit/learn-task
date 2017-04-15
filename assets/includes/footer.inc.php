@@ -1,48 +1,69 @@
-<footer class="content-info">
+<button class="btn-scroll--up"><span class="sr-only">Back to top</span><i class="fa fa-arrow-up"></i></button>
 
-                <ul class="piped">
-                    <li class="first">
-                        <a href="https://customer.io/">Home</a>
+<footer id="main-footer" class="main-footer content-info">
+
+    <div class="container">
+
+        <!-- ROW -->
+        <div class="row">
+
+            <div class="col-md-10">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="https://customer.io/" class="nav-link">Home</a>
                     </li>
-                    <li>
-                        <a href="https://customer.io/careers">Careers</a>
+                    <li class="nav-item">
+                        <a href="https://customer.io/careers" class="nav-link">Careers</a>
                     </li>
-                    <li>
-                        <a href="https://customer.io/about">About</a>
+                    <li class="nav-item">
+                        <a href="https://customer.io/about" class="nav-link">About</a>
                     </li>
-                    <li>
-                        <a href="https://customer.io/docs">Help</a>
+                    <li class="nav-item">
+                        <a href="https://customer.io/docs" class="nav-link">Help</a>
                     </li>
-                    <li>
-                        <a href="https://customer.io/contact/">Contact Us</a>
+                    <li class="nav-item">
+                        <a href="https://customer.io/contact/" class="nav-link">Contact Us</a>
                     </li>
-                    <li>
-                        <a href="https://customer.io/press">Press</a>
+                    <li class="nav-item">
+                        <a href="https://customer.io/press" class="nav-link">Press</a>
                     </li>
-                    <li>
-                        <a href="https://customer.io/got-better/">Product Updates</a>
+                    <li class="nav-item">
+                        <a href="https://customer.io/got-better/" class="nav-link">Product Updates</a>
                     </li>
-                    <li>
-                        <a href="https://learn.customer.io/api/">API</a>
+                    <li class="nav-item">
+                        <a href="https://learn.customer.io/api/" class="nav-link">API</a>
                     </li>
-                    <li>
-                        <a href="http://status.customer.io" target="_blank">Service Status</a>
-                    </li>
-                </ul><br>
-                <hr>
-                <ul class="piped light">
-                    <li class="first">© 2012-2016 Peaberry
-                    </li>
-                    <li>
-                        <a href="https://customer.io/terms-of-service.html">Terms of Service</a>
-                    </li>
-                    <li>
-                        <a href="https://customer.io/privacy-policy.html">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="https://customer.io/anti-spam-policy.html">Anti-Spam Policy</a>
+                    <li class="nav-item">
+                        <a href="http://status.customer.io" target="_blank"  class="nav-link">Service Status</a>
                     </li>
                 </ul>
+                <hr>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="https://customer.io/" class="nav-link disabled">&copy; 2012-2017 Peaberry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://customer.io/terms-of-service.html"  class="nav-link">Terms of Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://customer.io/privacy-policy.html"  class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://customer.io/anti-spam-policy.html"  class="nav-link">Anti-Spam Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <div class="footer-logo">
+                    <span class="sr-only">Customer.io Learn</span>
+                </div>
+            </div>
+
+        </div>
+        <!-- / ROW -->
+
+    </div>
 </footer>
 
 

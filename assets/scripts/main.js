@@ -28,12 +28,6 @@
 
         // SCROLL BUTTONS
         function scrollButtons() {
-          // DOWN
-          $('.btn-scroll--down').click(function() {
-            $('html, body').animate({
-                scrollTop: ($('#page-info').offset().top)
-            },500);
-          });
           // UP
           $('.btn-scroll--up').click(function() {
             $('html, body').animate({
@@ -42,6 +36,37 @@
           });
         }
 
+      
+        // WAYPOINTS
+        function waypointsInit() {
+
+          var footerInview = new Waypoint.Inview({
+            element: $('#main-footer')[0],
+            enter: function(direction) {
+              console.log('Enter triggered with direction ' + direction);
+              $(this.element).addClass('waypoint-active');
+            },
+            exited: function(direction) {
+              console.log('Exited triggered with direction ' + direction);
+              $(this.element).removeClass('waypoint-active');
+            }
+          });
+
+          // If it's in the DOM
+          if ($('.main-page').length) {
+            var footerInview = new Waypoint.Inview({
+              element: $('.main-page')[0],
+              enter: function(direction) {
+                console.log('Enter triggered with direction ' + direction);
+                $(this.element).addClass('waypoint-active');
+              },
+              exited: function(direction) {
+                console.log('Exited triggered with direction ' + direction);
+                $(this.element).removeClass('waypoint-active');
+              }
+            });
+          }
+        }
          
         // BUTTONS AT THE BUTTON OF INFO PAGE
         function onURLChange() {
@@ -108,7 +133,7 @@
         onURLChange();
         Barba.Pjax.start();
         checkImages();
-        //scrollSections();
+        waypointsInit();
         scrollButtons();
         Barba.Dispatcher.on('linkClicked', function() {
           // Scroll to the top of the current slide
@@ -121,10 +146,10 @@
           // Make sure the scroll spy is working on new slide
           $(".barba-container").fadeIn(50);
           ScrollPosStyler.init();
-          //scrollSections();
           scrollButtons();
           loaderAnim();
           onURLChange();
+          waypointsInit();
         });
 
 

@@ -5,7 +5,7 @@
   include_once('dist/includes/header.inc.php');
 ?>
                     
-      <main id="barba-wrapper" class="main-content sps" role="document">
+      <main id="barba-wrapper" class="main-content" role="document">
         
         <?php
           // NAV
@@ -51,7 +51,7 @@
               
               <div class="row">
                 <nav class="breadcrumb">
-                  <a class="breadcrumb-item" href="<?php echo $root ?>" title="Home">Home</a>
+                  <a class="breadcrumb-item" href="<?php echo $root ?>" title="Learn">Learn</a>
                   <a class="breadcrumb-item" href="<?php echo $root ?>/category" title="Category">Category</a>
                   <a class="breadcrumb-item" href="<?php echo $root ?>/single" title="Single">Single</a>
                   <span class="breadcrumb-item active">-</span>
@@ -63,6 +63,7 @@
                 <a href="<?php echo $root ?>/category" class="card">
                   <div class="card-img-top">
                     <i class="fa fa-code"></i>
+                    <span class="swipe-lines"></span>
                   </div>
                   <div class="card-block">
                     <h4 class="card-title">Developer Docs</h4>
@@ -74,7 +75,8 @@
                 </a>
                 <a href="<?php echo $root ?>/category" class="card">
                   <div class="card-img-top">
-                    <i class="fa fa-code"></i>
+                    <i class="fa fa-power-off"></i>
+                    <span class="swipe-lines"></span>
                   </div>
                   <div class="card-block">
                     <h4 class="card-title">Getting Started</h4>
@@ -86,7 +88,8 @@
                 </a>
                 <a href="<?php echo $root ?>/category" class="card">
                   <div class="card-img-top">
-                    <i class="fa fa-code"></i>
+                    <i class="fa fa-question"></i>
+                    <span class="swipe-lines"></span>
                   </div>
                   <div class="card-block">
                     <h4 class="card-title">Help Docs</h4>
@@ -100,7 +103,8 @@
               <div class="card-deck">
                 <a href="<?php echo $root ?>/category" class="card">
                   <div class="card-img-top">
-                    <i class="fa fa-code"></i>
+                    <i class="fa fa-graduation-cap"></i>
+                    <span class="swipe-lines"></span>
                   </div>
                   <div class="card-block">
                     <h4 class="card-title">Primers</h4>
@@ -112,7 +116,8 @@
                 </a>
                 <a href="<?php echo $root ?>/category" class="card">
                   <div class="card-img-top">
-                    <i class="fa fa-code"></i>
+                    <i class="fa fa-wrench"></i>
+                    <span class="swipe-lines"></span>
                   </div>
                   <div class="card-block">
                     <h4 class="card-title">REST API</h4>
@@ -124,7 +129,8 @@
                 </a>
                 <a href="<?php echo $root ?>/category" class="card">
                   <div class="card-img-top">
-                    <i class="fa fa-code"></i>
+                    <i class="fa fa-list-ol"></i>
+                    <span class="swipe-lines"></span>
                   </div>
                   <div class="card-block">
                     <h4 class="card-title">Recipes</h4>

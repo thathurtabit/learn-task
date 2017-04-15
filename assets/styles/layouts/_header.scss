@@ -28,29 +28,44 @@
 }
 
 .navbar .nav-link {
-	font-size: 12px;
-	color: $white;
-
-	.fa {
-		color: darken($brand-primary, 8%);
-		margin-left: 3px;
-		margin-right: 3px;
-	}
-}
-
-.navbar .nav-link--border {
-	@extend .nav-link;
 	background: transparent;
 	font-size: 10px;
 	text-transform: uppercase;
+	//border: 1px solid darken($brand-primary, 8%);
 	border: 1px solid darken($brand-primary, 8%);
-	color: darken($brand-primary, 8%);
-	padding: 3px 5px;
+	color: rgba(255,255,255,0.75);
+	padding: 0;
 	letter-spacing: 1px;
 	line-height: 1;
 	border-radius: 1px;
 
-	&:hover {
-		background: lighten($brand-primary, 3%);
+	span {
+		display: inline-block;
+		padding: 0 6px;
+		height: 17px;
+		line-height: 19px;
+		z-index: 2;
 	}
+
+	.fa {
+		color: darken($brand-primary, 8%);
+		margin-left: 2px;
+		margin-right: 2px;
+
+		&.fa-comment-o {
+			position: relative;
+			left: 2px;
+			top: -1px;
+		}
+	}
+
+	&.pos--absolute-right span {
+		border-left: 1px solid darken($brand-primary, 8%);
+	}
+
+	&.pos--absolute-left span {
+		border-right: 1px solid darken($brand-primary, 8%);
+	}
+
 }
+

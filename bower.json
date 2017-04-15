@@ -43,6 +43,12 @@
         "js/dist/tooltip.js",
         "js/dist/collapse.js"
       ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.min.js",
+        "lib/shortcuts/inview.min.js"
+      ]
     }
   }
 }
