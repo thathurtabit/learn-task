@@ -1,3 +1,12 @@
+// @include media-breakpoint-up(sm) {
+// }
+// @include media-breakpoint-up(md) {
+// }
+// @include media-breakpoint-up(lg) {
+// }
+// @include media-breakpoint-up(xl) {
+// }
+
 a:link,
 a:active,
 a:visited {
@@ -22,4 +31,30 @@ body {
 .main-page {
 	position: relative;
 	z-index: 2;
+}
+
+.sub-title {
+    margin: 1rem auto 4rem;
+    margin-bottom: 4rem;
+    padding: 1rem 2rem;
+    //border: 1px solid $hr-border-color;
+    border-radius: 2px;
+    line-height: 1;
+    font-size: 1.2rem;
+    color: lighten($body-color, 20%);
+    position: relative;
+
+    &::after {
+    	content: "";
+    	position: absolute;
+    	width: 20px;
+    	left: 50%;
+    	margin-left: -10px;
+    	bottom: -10px;
+    	border-bottom: 2px solid $brand-primary;
+    }
+}
+
+.bp {
+	color: $brand-primary;
 }

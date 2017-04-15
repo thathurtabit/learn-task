@@ -1,5 +1,5 @@
 footer.main-footer {
-	background-color: darken($ami-gray, 20%);
+	background-color: darken($ami-gray, 40%);
 	padding: 7rem 0 4rem;
 	font-size: 13px;
 }
@@ -50,7 +50,8 @@ footer.main-footer .nav-link {
 
 	&::before {
 		content: "";
-		background: rgba(255,255,255,0.1);
+		//background: rgba(255,255,255,0.1);
+		background: $brand-primary;
 		border-radius: 100%;
 		position: absolute;
 		top: 50%;

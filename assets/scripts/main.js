@@ -43,26 +43,35 @@
           var footerInview = new Waypoint.Inview({
             element: $('#main-footer')[0],
             enter: function(direction) {
-              console.log('Enter triggered with direction ' + direction);
               $(this.element).addClass('waypoint-active');
             },
             exited: function(direction) {
-              console.log('Exited triggered with direction ' + direction);
               $(this.element).removeClass('waypoint-active');
             }
           });
 
-          // If it's in the DOM
+          // If it's in the DOM (MAIN PAGE)
           if ($('.main-page').length) {
             var footerInview = new Waypoint.Inview({
               element: $('.main-page')[0],
               enter: function(direction) {
-                console.log('Enter triggered with direction ' + direction);
                 $(this.element).addClass('waypoint-active');
               },
               exited: function(direction) {
-                console.log('Exited triggered with direction ' + direction);
                 $(this.element).removeClass('waypoint-active');
+              }
+            });
+          }
+
+          // If it's in the DOM (META)
+          if ($('.split-meta-content').length) {
+            var footerInview = new Waypoint.Inview({
+              element: $('.split-meta-content')[0],
+              enter: function(direction) {
+                $(this.element).addClass('waypoint-meta-active');
+              },
+              exited: function(direction) {
+                $(this.element).removeClass('waypoint-meta-active');
               }
             });
           }
