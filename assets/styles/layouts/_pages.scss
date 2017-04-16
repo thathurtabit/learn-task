@@ -118,9 +118,36 @@
 
 .sticky-content__text-col {
 	padding-bottom: 5rem;
+	padding-left: $grid-gutter-width-base;
+	padding-right: $grid-gutter-width-base;
+
+	// RESPONSIVE UP
+	@include media-breakpoint-up(md) {
+		padding-left: $grid-gutter-width-base / 2;
+		padding-right: $grid-gutter-width-base / 2;
+	}
 }
 
 .sticky-content__text-col hr {
 	margin-top: 2rem;
 	margin-bottom: 1.5rem;
+}
+
+.sticky-content__nav-col {
+	position: relative;
+}
+
+.fixedsticky {
+	//transition: opacity $transition-time $transition-type;
+	transition-delay: $transition-time * 3;
+	//opacity: 0.01;
+	top: $navbar-height + 20;
+	left: 0;
+	width: 100%;
+	position: sticky;
+
+	.waypoint-active & {
+		position: sticky;
+		//opacity: 1;
+	}
 }

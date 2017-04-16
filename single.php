@@ -76,7 +76,20 @@
               <div class="row sticky-content">
   
                 <div class="col-md-3 sticky-content__nav-col">
-                  NAV
+                  <ul id="fixedsticky" class="nav flex-column fixedsticky">
+                    <li class="nav-item">
+                      <a class="nav-link btn-scroll--to" href="#section-1">Javascript Snippet</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn-scroll--to" href="#section-2">Client Libraries</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn-scroll--to" href="#section-3">Segment</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn-scroll--to" href="#section-4">Importing your old data</a>
+                    </li>
+                  </ul>
                 </div>
 
                 <!-- CONTENT COL -->
@@ -84,7 +97,7 @@
                 
                   <p class="lead">Sending data to Customer.io is easy and familiar for most developers. <br />There are three ways we recommend to get started.</p>
 
-                  <h3>Javascript Snippet</h3>
+                  <h3 id="section-1">Javascript Snippet</h3>
 
                   <p>The javascript snippet is the easiest way to start sending data to Customer.io. You copy and paste your Customer.io tracking code in to the footer of your website. Then you identify logged in users and any important information about them. You’ll then be able to email everyone who logs in to the website.</p>
 
@@ -92,7 +105,7 @@
 
                   <hr />
 
-                  <h3>Client Libraries</h3>
+                  <h3 id="section-2">Client Libraries</h3>
 
                   <p>Customer.io supports a RESTful API for receiving your customer data. We also maintain libraries for several languages and list libraries graciously contributed by our customers.</p>
 
@@ -103,7 +116,7 @@
 
                   <hr />
                   
-                  <h3>Segment</h3>
+                  <h3 id="section-3">Segment</h3>
                   <p>There are 2 reasons to take a look at Segment:</p>
 
                   <ol>
@@ -117,7 +130,7 @@
 
                   <hr />
                   
-                  <h3>Importing your old data</h3>
+                  <h3 id="section-4">Importing your old data</h3>
                   <p>We can help you backfill old data. Backfill old data</p>
 
 

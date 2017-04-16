@@ -49,6 +49,12 @@
         "lib/jquery.waypoints.min.js",
         "lib/shortcuts/inview.min.js"
       ]
+    },
+    "font-awesome": {
+      "main": [
+        "scss/font-awesome.scss",
+        "fonts/*"
+      ]
     }
   }
 }

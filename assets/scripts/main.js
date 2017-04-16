@@ -34,6 +34,17 @@
                 scrollTop: ($('#page-cover').offset().top)
             },500);
           });
+
+          // SCROLL TO
+          $('.btn-scroll--to').click(function(e) {
+            var target = $(this.getAttribute('href'));
+              if( target.length ) {
+                  e.preventDefault();
+                  $('html, body').animate({
+                      scrollTop: (target.offset().top) - 100
+                  }, 500);
+              }
+          });
         }
 
       

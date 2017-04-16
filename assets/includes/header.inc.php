@@ -14,8 +14,8 @@
   <link rel="icon" type="image/png" href="<?php echo $myPath; ?>dist/images/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="<?php echo $myPath; ?>dist/images/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="<?php echo $myPath; ?>dist/images/manifest.json">
-  <link rel="mask-icon" href="<?php echo $myPath; ?>dist/images/safari-pinned-tab.svg" color="#1f2021">
-  <meta name="theme-color" content="#1f2021">
+  <link rel="mask-icon" href="<?php echo $myPath; ?>dist/images/safari-pinned-tab.svg" color="#00acab">
+  <meta name="theme-color" content="#00acab">
   
   <title><?php echo $pageName . ' ' . $websiteName; ?> </title>
 
