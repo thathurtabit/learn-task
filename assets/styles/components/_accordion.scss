@@ -33,7 +33,8 @@
 	position: relative;
 }
 
-.accordion .card-block li a.nav-link {
+.accordion .card-block li a.nav-link,
+.fixedsticky li a.nav-link {
 	display: inline-block;
 	position: relative;
 

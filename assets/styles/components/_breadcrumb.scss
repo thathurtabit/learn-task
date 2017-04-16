@@ -23,6 +23,13 @@
     white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	margin-right: 15px;
+	padding-right: 0;
+
+	&:before {
+		display: none !important;
+		padding: 0 !important;
+	}
 
     @include media-breakpoint-up(md) {
     	float: left;

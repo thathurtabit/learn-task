@@ -40,14 +40,14 @@
             <div class="container main-page">
               
               <div class="row">
-                <nav class="breadcrumb col-md-12 col-lg-8">
-                  <a class="breadcrumb-item" href="<?php echo $root ?>" title="Learn">Learn</a>
-                  <a class="breadcrumb-item" href="<?php echo $root ?>/category" title="Category">Developer Documentaton</a>
+                <nav class="breadcrumb col-md-12 col-lg-6">
+                  <a class="breadcrumb-item btn--underline" href="<?php echo $root ?>" title="Learn">Learn</a>
+                  <a class="breadcrumb-item btn--underline" href="<?php echo $root ?>/category" title="Category">Developer Documentaton</a>
                   <span class="breadcrumb-item active">Integrating with Customer.io</span>                  
                 </nav>
 
                 <!-- INNER SEARCH WRAP -->
-                <div class="inner-search-wrap col-md-3 offset-md-1">
+                <div class="inner-search-wrap col-md-3 offset-md-3">
                   <div class="inner-search pull-right">
                     <form class="form-inline">
                       <div class="input-group">
@@ -77,17 +77,19 @@
   
                 <div class="col-md-3 sticky-content__nav-col">
                   <ul id="fixedsticky" class="nav flex-column fixedsticky">
+                    <h4>On this page:</h4>
+
                     <li class="nav-item">
-                      <a class="nav-link btn-scroll--to" href="#section-1">Javascript Snippet</a>
+                      <a class="nav-link btn-scroll--to" href="#section-1"><span>Javascript Snippet</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link btn-scroll--to" href="#section-2">Client Libraries</a>
+                      <a class="nav-link btn-scroll--to" href="#section-2"><span>Client Libraries</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link btn-scroll--to" href="#section-3">Segment</a>
+                      <a class="nav-link btn-scroll--to" href="#section-3"><span>Segment</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link btn-scroll--to" href="#section-4">Importing your old data</a>
+                      <a class="nav-link btn-scroll--to" href="#section-4"><span>Importing your old data</span></a>
                     </li>
                   </ul>
                 </div>
