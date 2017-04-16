@@ -27,22 +27,53 @@ body {
 	font-weight: 100;
 }
 
+.lead {
+    margin-bottom: 4rem;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        width: 20px;
+        height: 0;
+        border-top: 4px dotted $brand-primary;
+    }
+
+}
 
 .main-page {
+    transition: transform $transition-time $transition-type, opacity $transition-time ease-out;
+    transform-delay: $transition-time;
 	position: relative;
 	z-index: 2;
+    opacity: 0;
+    transform: translate(0, 20px);
+
+    .page-ready & {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
 .sub-title {
+    transition: transform $transition-time $transition-type, opacity $transition-time ease-out;
+    opacity: 0;
+    transform: translate(0, 10px);    
     margin: 1rem auto 4rem;
     margin-bottom: 4rem;
     padding: 1rem 2rem;
-    //border: 1px solid $hr-border-color;
     border-radius: 2px;
     line-height: 1;
     font-size: 1.2rem;
     color: lighten($body-color, 20%);
     position: relative;
+
+    .waypoint-active & {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 
     &::after {
     	content: "";
@@ -54,6 +85,41 @@ body {
     	border-bottom: 2px solid $brand-primary;
     }
 }
+
+.sub-title-icon {
+    transition: transform $transition-time $transition-type, opacity $transition-time ease-out;
+    opacity: 0;
+    transform: translate(0, 10px); 
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: $ami-gray;
+    margin: -130px auto 6rem;
+    color: $white;
+    line-height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.05);
+
+    // RESPONSIVE
+    @include media-breakpoint-up(md) {
+        margin: -120px auto 6rem;
+    }
+
+    .page--home & {
+        margin: -130px auto 2rem;
+
+        @include media-breakpoint-up(md) {
+            margin: -66px auto 2rem;
+        }
+    }
+
+    .waypoint-active & {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
 
 .bp {
 	color: $brand-primary;

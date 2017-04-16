@@ -45,3 +45,40 @@
 		color: $body-color;
 	}
 }
+
+
+.inner-search-wrap {
+	@include media-breakpoint-down(md) {
+		position: absolute;
+	    top: -130px;
+	    width: 200px;
+	    margin-left: -100px;
+	    left: 50%;
+	}
+
+}
+
+
+.inner-search .form-inline .form-control {
+	transition: background $transition-time ease-out;
+	background: darken($white, 2%);
+	padding: 0.5rem;
+	border: 0;
+	color: $brand-primary;
+	font-size: 0.9rem;
+	text-align: center;
+
+	&::placeholder {
+		color: lighten($gray, 50%);
+	}
+
+	&:focus {
+		background: darken($white, 5%);
+		color: $body-color;
+	}
+}
+
+.inner-search .input-group-addon {
+	padding: 0.7rem 0.7rem;
+	font-size: 0.9rem;
+}

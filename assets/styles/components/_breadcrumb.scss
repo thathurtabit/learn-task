@@ -2,10 +2,14 @@
     padding: .75rem 1rem;
     background-color: transparent;
     position: relative;
+    text-align: center;
+    width: 100%;
 
-    @include media-breakpoint-up(md) {
-    	position: absolute;
-    }
+    .page--home & {
+	    @include media-breakpoint-up(md) {
+	    	position: absolute;
+	    }
+	}
 }
 
 .breadcrumb-item {
@@ -13,8 +17,23 @@
 	font-size: 10px;
 	letter-spacing: 1px;
 	color: lighten($body-color, 40%);
+	display: inline-block;
+    float: none;
+    max-width: 33%;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+    @include media-breakpoint-up(md) {
+    	float: left;
+    }
 
 	&:hover {
 		color: $brand-primary;
+	}
+
+	&.active,
+	&.active:hover {
+		color: lighten($body-color, 50%);
 	}
 }

@@ -22,7 +22,7 @@
               </div>
               <div class="ami-intro">
                 <div class="ami-intro__cover-img">
-                  <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
+                  <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" alt="Ami" />
                 </div>
 
               </div>
@@ -42,6 +42,9 @@
               </div>
               <!-- / MAIN SEARCH WRAP -->
 
+              <!-- LOADER -->
+              <?php include_once('dist/includes/loader.inc.php'); ?>
+
             </div>
             <!-- / PAGE HEADER -->
             
@@ -51,9 +54,14 @@
               
               <div class="row">
                 <nav class="breadcrumb">
-                  <a class="breadcrumb-item" href="<?php echo $root ?>" title="Learn">Learn</a>
+                  <span class="breadcrumb-item active">Learn</span>
                 </nav>
               </div>
+
+              <div class="row">
+                <h2 class="sub-title-icon" data-animation="false" data-toggle="tooltip" data-placement="top" title="Help &amp; Documentation"><span class="sr-only">Help &amp; Documentation</span><i class="fa fa-graduation-cap"></i></h2>
+              </div>
+            
 
               <div class="row">
                 <h2 class="sub-title text-center">Help <span class="bp">&amp;</span> Technical Documentation</h2>
@@ -185,6 +193,9 @@
                                                 
           
         </div><!-- /.content -->
+
+
+
       </div><!-- /.wrap -->
       
       </main><!-- /.main -->

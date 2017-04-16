@@ -17,7 +17,7 @@
 		}
 	}
 
-	@include media-breakpoint-down(sm) {
+	@include media-breakpoint-down(xs) {
 		&:not(:last-child) {
 			border-right: 1px solid rgba(0,0,0,.125);
 		}
@@ -85,6 +85,10 @@
 	@include media-breakpoint-up(lg) {
 		font-size: 1.5rem;
 	}
+}
+
+.card-footer {
+	line-height: 1;
 }
 
 .card-img-top {

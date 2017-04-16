@@ -13,89 +13,170 @@
         ?>
 
         <div class="barba-container">
-          <div id="page-cover" class="page page--home sps">
+          <div id="page-cover" class="page page--single">
           
-          
-            
-      			<div class="jumbotron mt-3">
-              <h1 class="d-flex display-3">Learn</h1>
-              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-              <hr class="my-4">
-              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-              <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-              </p>
-            </div>
+            <!-- PAGE HEADER -->
+            <div class="jumbotron text-center">
+              <div class="plane-intro">
+                <div class="plane-intro__cover-img">
+                  <img src="<?php echo $root; ?>/dist/images/plane.png" class="img-fluid plane-intro__plane" alt="Customer.io Plane" />
+                  <img src="<?php echo $root; ?>/dist/images/cloud1.png" class="img-fluid plane-intro__cloud1" alt="Cloud" />
+                  <img src="<?php echo $root; ?>/dist/images/cloud2.png" class="img-fluid plane-intro__cloud2" alt="Cloud" />
+                  <img src="<?php echo $root; ?>/dist/images/cloud3.png" class="img-fluid plane-intro__cloud3" alt="Cloud" />
+                </div>
 
-            <div class="container mt-3">
+              </div>
+              <h1 class="display-3 text-center">Integrating with Customer.io</h1>
+              <p>Sending data to Customer.io is easy and familiar for most developers.</p>
+              
+              <!-- LOADER -->
+              <?php include_once('dist/includes/loader.inc.php'); ?>
+
+            </div>
+            <!-- / PAGE HEADER -->
+            
+
+            <!-- MAIN CONTENT -->
+            <div class="container main-page">
+              
+              <div class="row">
+                <nav class="breadcrumb col-md-12 col-lg-8">
+                  <a class="breadcrumb-item" href="<?php echo $root ?>" title="Learn">Learn</a>
+                  <a class="breadcrumb-item" href="<?php echo $root ?>/category" title="Category">Developer Documentaton</a>
+                  <span class="breadcrumb-item active">Integrating with Customer.io</span>                  
+                </nav>
+
+                <!-- INNER SEARCH WRAP -->
+                <div class="inner-search-wrap col-md-3 offset-md-1">
+                  <div class="inner-search pull-right">
+                    <form class="form-inline">
+                      <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search" />
+                        <button class="btn input-group-addon" type="submit"><span class="sr-only">Search</span><i class="fa fa-search"></i></button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- / INNER SEARCH WRAP -->
+
+
+              </div>
+
+              <div class="row">
+                <h2 class="sub-title-icon" data-animation="false" data-toggle="tooltip" data-placement="top" title="Integrating with Customer.io"><span class="sr-only">Integrating with Customer.io</span><i class="fa fa-code"></i></h2>
+              </div>
+            
             <div class="row">
-              <div class="card-deck">
-                <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+                  <div class="sub-title">
+                    <h2>Integrating with Customer.io</h2>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+
+              <!-- CONTENT + STICKY -->
+              <div class="row sticky-content">
+  
+                <div class="col-md-3 sticky-content__nav-col">
+                  NAV
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+
+                <!-- CONTENT COL -->
+                <div class="col-md-7 sticky-content__text-col">
+                
+                  <p class="lead">Sending data to Customer.io is easy and familiar for most developers. <br />There are three ways we recommend to get started.</p>
+
+                  <h3>Javascript Snippet</h3>
+
+                  <p>The javascript snippet is the easiest way to start sending data to Customer.io. You copy and paste your Customer.io tracking code in to the footer of your website. Then you identify logged in users and any important information about them. You’ll then be able to email everyone who logs in to the website.</p>
+
+                  <a href="#">Javascript quick start</a>
+
+                  <hr />
+
+                  <h3>Client Libraries</h3>
+
+                  <p>Customer.io supports a RESTful API for receiving your customer data. We also maintain libraries for several languages and list libraries graciously contributed by our customers.</p>
+
+                  <ul>
+                    <li><a href="#">API Documentation</a></li>
+                    <li><a href="#">Libraries</a></li>
+                  </ul>
+
+                  <hr />
+                  
+                  <h3>Segment</h3>
+                  <p>There are 2 reasons to take a look at Segment:</p>
+
+                  <ol>
+                    <li>Customer.io doesn’t maintain a client library for your language (Java, iOS, Android, OS X)</li>
+                    <li>You’re sending similar or the same data to other services</li>
+                  </ol>
+
+                  <p>If you’re using (or planning to use) other services alongside Customer.io like: Woopra, Optimizely, Kissmetrics, Mixpanel, Olark or Google Analytics, we recommend using Segment, a third party product to send your data to Customer.io. This will save you a meaningful amount of integration time and is fully supported by us.</p>
+
+                  <a href="#">Check out Segment</a> — and <a href="#">how to use Segment to get started with your Customer.io integration</a>.
+
+                  <hr />
+                  
+                  <h3>Importing your old data</h3>
+                  <p>We can help you backfill old data. Backfill old data</p>
+
+
+
                 </div>
-                <div class="card">
-                  <img class="card-img-top" src="http://placehold.it/250x150" alt="Card image cap">
-                  <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
+                <!-- / CONTENT COL -->
+
+              </div>
+              <!-- / CONTENT + STICKY -->
+
+
+
+            </div>
+            
+            <hr />
+
+            <div id="split-meta-content" class="split-meta-content container mt-5">
+              <div class="row">
+                
+                <div class="col-md-6 split-meta-content__col">
+                    <a href="<?php echo $root ?>/category" class="split-meta-content__block">
+                      <div class="ami-meta">
+                        <div class="ami-meta__cover-img">
+                          <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
+                        </div>
+                      </div>
+                     <h3 class="split-meta-content__block-h">Need some help?</h3>
+                      <p class="split-meta-content__block-p">If you have questions or can't find what you're looking for, we're here for you. Click here to get in touch!</p>
+                    </a>
                 </div>
+
+                <div class="col-md-6 split-meta-content__col">
+                    <a href="<?php echo $root ?>/category" class="split-meta-content__block">
+                      <div class="ami-meta">
+                        <div class="ami-meta__cover-img">
+                          <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
+                        </div>
+                      </div>
+                      <h3 class="split-meta-content__block-h">Keep on learning</h3>
+                      <p class="split-meta-content__block-p">Discover ways to communicate with your customers to increase engagement on the Customer.io blog.</p>
+                    </a>                  
+                </div>
+
               </div>
             </div>
+
+
           </div>
 
-          <div class="container mt-3">
-            <div class="row">
-              
-              <ul class="list-unstyled">
-                <li class="media">
-                  <img class="d-flex mr-3" src="http://placehold.it/80x80" alt="Generic placeholder image">
-                  <div class="media-body">
-                    <h5 class="mt-0 mb-1">List-based media object</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                  </div>
-                </li>
-                <li class="media my-3">
-                  <img class="d-flex mr-3" src="http://placehold.it/80x80" alt="Generic placeholder image">
-                  <div class="media-body">
-                    <h5 class="mt-0 mb-1">List-based media object</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                  </div>
-                </li>
-                <li class="media">
-                  <img class="d-flex mr-3" src="http://placehold.it/80x80" alt="Generic placeholder image">
-                  <div class="media-body">
-                    <h5 class="mt-0 mb-1">List-based media object</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                  </div>
-                </li>
-              </ul>
+          <!-- / MAIN CONTENT -->
 
-            </div>
-          </div>
+          
                                                 
           
         </div><!-- /.content -->
+
+        <!-- LOADER -->
+        <?php include_once('dist/includes/loader.inc.php'); ?>
+
       </div><!-- /.wrap -->
       
       </main><!-- /.main -->

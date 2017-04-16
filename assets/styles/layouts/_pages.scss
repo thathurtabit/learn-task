@@ -34,6 +34,14 @@
 .split-meta-content__col {
 	background: url(../images/bg-diag.png);
 
+	// RESPONSIVE DOWN
+	@include media-breakpoint-down(md) {
+		&:first-child {
+			margin-bottom: 1rem;
+		}
+	}
+
+	// RESPONSIVE UP
 	@include media-breakpoint-up(md) {
 		&:first-child {
 			border-right: 10px solid $white;
@@ -105,4 +113,14 @@
 			animation: blink $transition-time * 8 ease-in-out infinite alternate;
 		}
 	}
+}
+
+
+.sticky-content__text-col {
+	padding-bottom: 5rem;
+}
+
+.sticky-content__text-col hr {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
 }

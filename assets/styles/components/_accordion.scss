@@ -1,0 +1,91 @@
+.accordion {
+	transition: transform $transition-time $transition-type, opacity $transition-time ease-out;
+	opacity: 0;
+	transform: translate(0, 10px);
+	transition-delay: $transition-time;
+	margin-bottom: 3rem;
+
+	.waypoint-active & {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+
+.accordion .card:not(:last-child) {
+	border-bottom: 0;
+}
+
+.accordion .card-header a {
+	color: lighten($body-color, 20%);
+
+	&:hover {
+		color: $body-color;
+	}
+}
+
+.accordion .card-block {
+    text-align: left;
+}
+
+.accordion .card-block li {
+	padding-left: 0;
+	position: relative;
+}
+
+.accordion .card-block li a.nav-link {
+	display: inline-block;
+	position: relative;
+
+	span {
+		transition: transform $transition-time $transition-type;
+		transform: translate(0, 0);
+		position: relative;
+		z-index: 2;
+		padding-left: 5px;
+		padding-right: 10px;
+		display: inline-block;
+	}
+
+	&:hover span {
+		transform: translate(7px, 0);
+	}
+
+	&::before {
+		transition: all $transition-time $transition-type;
+		content: "";
+		transform: translate(5px, 0) rotate(0deg);
+		width: 4px;
+		height: 4px;
+		border-radius: 100%;
+		background-color: darken($white, 30%);
+		position: absolute;
+	    left: 0;
+	    top: 50%;
+	    margin-top: -2px;
+	    z-index: 3;
+	}
+
+	&:hover::before {
+		transform: translate(10px, 0) rotate(45deg);
+		width: 4px;
+		border-radius: 0;
+		background-color: $brand-primary;
+	}
+
+	&::after {
+		transition: width $transition-time $transition-type;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 0;
+		background-color: darken($white, 3%);
+		z-index: 0;
+	}
+
+	&:hover::after {
+		width: 100%;
+	}
+}

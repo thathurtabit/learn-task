@@ -7,7 +7,7 @@
         <!-- ROW -->
         <div class="row">
 
-            <div class="col-md-10">
+            <div class="col-md-11">
                 <ul class="nav">
                     <li class="nav-item">
                         <a href="https://customer.io/" class="nav-link">Home</a>
@@ -54,7 +54,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-1">
                 <div class="footer-logo">
                     <span class="sr-only">Customer.io Learn</span>
                 </div>

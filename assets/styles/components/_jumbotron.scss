@@ -10,6 +10,10 @@
     position: relative;
     background-attachment: fixed;
 
+    .page--home & {
+    	min-height: 500px;
+    }
+
     &::after {
     	content: "";
     	position: absolute;
@@ -23,6 +27,20 @@
 
 .jumbotron h1 {
 	color: $white;
+	font-size: 2rem;
+	margin-top: 1rem;
+
+	@include media-breakpoint-up(sm) {
+		font-size: 2.5rem;
+	}
+
+	@include media-breakpoint-up(md) {
+		font-size: 3rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		font-size: 4rem;
+	}
 }
 
 .jumbotron p {
@@ -115,7 +133,7 @@
 }
 
 
-// PERCENT CIRCLE ANIMATION
+// BLINK ANIMATION
 @keyframes blink {
   0% {
     height: 1px;
@@ -131,5 +149,120 @@
   }
   100% {
     height: 4px;
+  }
+}
+
+
+
+.plane-intro {	
+	background-color: rgba(255,255,255,0.2);
+	width: 80px;
+	height: 80px;
+	position: relative;
+	border-radius: 100%;
+}
+
+.plane-intro__cover-img {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 80px;
+	height: 80px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.plane-intro__plane,
+.plane-intro__cloud1,
+.plane-intro__cloud2,
+.plane-intro__cloud3 {
+	transition: opacity $transition-time $transition-type;	
+	opacity: 0;
+
+	// TRANSITION
+	.sps--abv & {
+		opacity: 1;
+	}
+}
+
+.plane-intro__cloud1,
+.plane-intro__cloud2,
+.plane-intro__cloud3 {
+	position: absolute;
+}
+
+.plane-intro__plane {
+	transform: translate(-10px, 10px);
+	transition-delay: 0.25s;
+
+	animation: floaty-ud $transition-time * 18 ease-in-out infinite alternate;
+	animation-delay: $transition-time;
+}
+
+.plane-intro__cloud1 {
+	transition-delay: 0.2s;
+	left: -2px;
+	top: 10px;
+	animation: floaty-l $transition-time * 14 ease-in-out infinite alternate;
+}
+
+.plane-intro__cloud2 {
+	transition-delay: 0.15s;
+	left: -15px;
+	bottom: 20px;
+	animation: floaty-l $transition-time * 14 ease-in-out infinite alternate;
+	animation-delay: $transition-time;	
+}
+
+.plane-intro__cloud3 {
+	transition-delay: 0.1s;
+	right: -11px;
+    bottom: 20px;
+    animation: floaty-r $transition-time * 15 ease-in-out infinite alternate;
+}
+
+// FLOATY UD ANIMATION
+@keyframes floaty-ud {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-2px, 3px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+// FLOATY L ANIMATION
+@keyframes floaty-l {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-3px, 0);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+// FLOATY R ANIMATION
+@keyframes floaty-r {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(5px, 0);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
   }
 }
