@@ -93,20 +93,15 @@
 
 
 // THEME SWAP
-.theme2 .card-img-top,
+
+.theme2 .card-img-top {
+	background: url(../images/school.png);
+}
+
 .theme3 .card-img-top {
-	background: $brand-primary;
+	background: url(../images/bg-abstract.jpg);
 }
 
-.theme2 .card:hover .card-img-top::before,
-.theme3 .card:hover .card-img-top::before {
-	background: $brand-alt;
-}
-
-.theme2 .card:hover .fa,
-.theme3 .card:hover .fa {
-	color: $brand-primary;
-}
 
 .card-img-top {
 	height: 100px;
