@@ -99,6 +99,22 @@
               }
           });
 
+          // THEME 4
+          // Change theme and save with cookie - toggle
+          $(".toggle-theme4").click(function () {
+
+              // Remove current theme
+              $('body').removeClass(function (index, css) {
+                  return (css.match(/(^|\s)theme\S+/g) || []).join(' ');
+              });
+            
+              // If the class isn't already added, then add it
+              if (!$("body").hasClass("theme4")) {
+                $("body").addClass("theme4");
+                localStorage.theme = "theme4";
+              }
+          });
+
           // Check the sessionStorage property and add class
            if ('theme1' in localStorage) {
              // add class setting
@@ -113,6 +129,11 @@
            if ('theme3' in localStorage) {
              // add class setting
              $("body").addClass('theme3');
+           }
+
+           if ('theme4' in localStorage) {
+             // add class setting
+             $("body").addClass('theme4');
            }
        }
 

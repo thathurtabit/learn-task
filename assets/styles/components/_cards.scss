@@ -57,7 +57,7 @@
 	}
 	
 	&:hover .card-img-top::after {
-		transform: rotate(00deg) scale(1.3);
+		transform: rotate(45deg) translate(-200px, -200px);
 	}
 
 	&:hover .swipe-lines {
@@ -100,12 +100,17 @@
 
 .theme3 .card-img-top {
 	background: url(../images/bg-abstract.jpg);
+	
+	&::after {
+		display: none;
+	}
 }
+
 
 
 .card-img-top {
 	height: 100px;
-	background: darken($ami-gray, 15%);
+	background: lighten($ami-gray, 20%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -124,7 +129,7 @@
 	.fa {
 		transition: transform $transition-time $transition-type;
 		transform: scale(1);
-		color: lighten($body-color, 40%);
+		color: lighten($body-color, 20%);
 		font-size: 1.8rem;
 		border-radius: 100%;
 		display: flex;
@@ -156,11 +161,15 @@
 		content: "";
 		position: absolute;
 		background: rgba(255,255,255,0.05);
-		transform: rotate(-23deg) scale(1.3);
-		transform-origin: top right;
-		height: 100%;
-		width: 100%;
-		z-index: 2;
+		transform: rotate(45deg);
+		transform-origin: center center;
+	    height: 300px;
+	    width: 300px;
+	    z-index: 2;
+	    left: 50%;
+	    margin-left: -150px;
+	    top: -118%;
+	    border: 1px solid rgba(0,0,0,0.075);
 	}
 }
 

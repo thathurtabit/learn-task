@@ -4,7 +4,7 @@
 	align-items: center;
 	justify-content: center;
     padding: 1rem;
-    background-color: darken($brand-primary, 5%);
+    background-color: darken($brand-primary, 3%);
     min-height: 500px;
     z-index: 1;
     position: relative;
@@ -27,8 +27,9 @@
 
 
 // THEME SWITCH
-.theme1 .jumbotron {
-	background: darken($brand-primary, 5%) url(../images/bg-diag.png) fixed;
+.theme4 .jumbotron {
+	//background: linear-gradient(135deg, lighten($brand-primary, 8%) 0%, darken($brand-primary, 8%) 100%);
+	background: linear-gradient(150deg, rgba(130,191,190,1) 0%, rgba(56,150,152,1) 25%, rgba(130,191,190,1) 25%, rgba(56,150,152,1) 50%, rgba(44,122,121,1) 50%, rgba(44,122,121,1) 75%, rgba(35,90,90,1) 75%, rgba(35,90,90,1) 100%);
 
 	h1, p {
 		z-index: 5;
@@ -51,14 +52,19 @@
 // THEME SWITCH
 .theme3 .jumbotron {
 	background: url(../images/bg-abstract.jpg) fixed;
-
-	h1 {
-		color: lighten($body-color, 20%);
-	}
+	
 	p {
 		color: $white;
 	}
 }
+
+
+// THEME SWITCH
+.theme4 .jumbotron-inner,
+.theme3 .jumbotron-inner  {
+	background: rgba(56,151,152,0.75);
+}
+
 
 
 .jumbotron-inner {
@@ -271,7 +277,7 @@
 }
 
 .theme3 .plane-intro__plane {
-	background: url(../images/plane-gray.png);
+	background: url(../images/plane.png);
 }
 
 .plane-intro__plane,
