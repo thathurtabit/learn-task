@@ -157,19 +157,28 @@
 	}
 
 	&:after {
-		transition: transform $transition-time $transition-type;
-		content: "";
-		position: absolute;
-		background: rgba(255,255,255,0.05);
-		transform: rotate(45deg);
-		transform-origin: center center;
-	    height: 300px;
-	    width: 300px;
-	    z-index: 2;
-	    left: 50%;
-	    margin-left: -150px;
-	    top: -118%;
-	    border: 1px solid rgba(0,0,0,0.075);
+		@include media-breakpoint-up(md) {
+			transition: transform $transition-time $transition-type;
+			content: "";
+			position: absolute;
+			background: rgba(255,255,255,0.05);
+			transform: rotate(45deg);
+			transform-origin: center center;
+			height: 300px;
+			width: 300px;
+			z-index: 2;
+			left: 50%;
+			margin-left: -150px;
+			top: -167%;
+			border: 1px solid rgba(0,0,0,0.075);
+
+		}
+		@include media-breakpoint-up(lg) {
+			top: -128%;
+		}
+		@include media-breakpoint-up(xl) {
+			top: -110%;
+		}
 	}
 }
 

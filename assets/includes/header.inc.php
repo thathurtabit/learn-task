@@ -2,7 +2,7 @@
 
 // NOTE: You'll need to change this on the live server
 
-$root = "http://localhost/customer.io-learn/learn-task";
+$root = "http://localhost/customer.io-learn";
 
 ?>
 

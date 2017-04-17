@@ -13,6 +13,16 @@
 
 		// RESPONSIVE DOWN
 		@include media-breakpoint-up(md) {
+			left: -30px;
+			right: -30px;
+		}
+
+		@include media-breakpoint-up(lg) {
+			left: -20px;
+			right: -20px;
+		}
+
+		@include media-breakpoint-up(xl) {
 			left: -40px;
 			right: -40px;
 		}
