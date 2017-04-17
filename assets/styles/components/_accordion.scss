@@ -12,15 +12,48 @@
 }
 
 
-.accordion .card:not(:last-child) {
-	border-bottom: 0;
+// .accordion .card:not(:last-child) {
+// 	border-bottom: 0;
+// }
+
+.accordion .card {
+	border: 0;
 }
 
 .accordion .card-header a {
 	color: lighten($body-color, 20%);
+	display: block;
+	position: relative;
+	padding-left: 20px;
+
+	&::after {
+		transition: background-color $transition-time / 2 ease-out;
+		content: $fa-var-minus;
+		font-family: "FontAwesome";
+		position: absolute;
+		left: 0;
+    	top: 4px;
+		width: 12px;
+		height: 12px;
+		line-height: 13px;
+		background-color: $white;
+		border-radius: 100%;
+		color: $brand-primary;
+		font-size: 0.5rem;
+		text-align: center;
+	}
+
+	&.collapsed::after {
+		content: $fa-var-plus;
+	}
 
 	&:hover {
 		color: $body-color;
+	}
+
+	&:hover::after {
+		background-color: $brand-primary;
+		color: $white;
 	}
 }
 
@@ -46,6 +79,7 @@
 		padding-left: 5px;
 		padding-right: 10px;
 		display: inline-block;
+		line-height: 1.2;
 	}
 
 	&:hover span {
@@ -54,33 +88,34 @@
 
 	&::before {
 		transition: all $transition-time $transition-type;
-		content: "";
-		transform: translate(5px, 0) rotate(0deg);
+		font-family: "FontAwesome";
+		content: $fa-var-paper-plane-o;
+		transform: translate(7px, 0) rotate(10deg);
 		width: 4px;
 		height: 4px;
+		font-size: 8px;
+		color: lighten($body-color, 30%);
 		border-radius: 100%;
-		background-color: darken($white, 30%);
 		position: absolute;
-	    left: 0;
-	    top: 50%;
-	    margin-top: -2px;
+	    left: -6px;
+	    top: 13px;
 	    z-index: 3;
 	}
 
 	&:hover::before {
-		transform: translate(10px, 0) rotate(45deg);
+		transform: translate(17px, 0) rotate(30deg);
 		width: 4px;
 		border-radius: 0;
-		background-color: $brand-primary;
+		color: $brand-primary;
 	}
 
 	&::after {
 		transition: width $transition-time $transition-type;
 		content: "";
 		position: absolute;
-		top: 0;
+		top: 5px;
 		left: 0;
-		bottom: 0;
+		bottom: 5px;
 		width: 0;
 		background-color: darken($white, 3%);
 		z-index: 0;

@@ -61,7 +61,7 @@
 
 .inner-search .form-inline .form-control {
 	transition: background $transition-time ease-out;
-	background: darken($white, 3%);
+	background: darken($white, 5%);
 	padding: 0.5rem;
 	border: 0;
 	color: $brand-primary;
@@ -73,7 +73,7 @@
 	}
 
 	&:focus {
-		background: darken($white, 5%);
+		background: darken($white, 8%);
 		color: $body-color;
 	}
 }

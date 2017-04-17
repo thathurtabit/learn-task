@@ -17,34 +17,37 @@
           
             <!-- PAGE HEADER -->
       			<div class="jumbotron text-center">
-              <div class="ami-intro__text">
-                  <p>Knowledge<br/> is power!</p>
-              </div>
-              <div class="ami-intro">
-                <div class="ami-intro__cover-img">
-                  <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" alt="Ami" />
+              <!-- PAGE HEADER INNER -->
+              <div class="jumbotron-inner">
+                <div class="ami-intro__text">
+                    <p>Knowledge<br/> is power!</p>
                 </div>
+                <div class="ami-intro">
+                  <div class="ami-intro__cover-img">
+                    <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" alt="Ami" />
+                  </div>
 
-              </div>
-              <h1 class="display-3 text-center">Learn</h1>
-              <p>Welcome to the Customer.io knowledge base</p>
-
-              <!-- MAIN SEARCH WRAP -->
-              <div class="main-search-wrap">
-                <div class="main-search col-sm-8 justify-content-md-center col-md-6 col-lg-5 col-xl-3">
-                  <form class="form-inline">
-                    <div class="input-group">
-                      <input class="form-control" type="text" placeholder="Search" />
-                      <button class="btn input-group-addon" type="submit"><span class="sr-only">Search</span><i class="fa fa-search"></i></button>
-                    </div>
-                  </form>
                 </div>
+                <h1 class="display-3 text-center">Learn</h1>
+                <p>Welcome to the Customer.io knowledge base</p>
+
+                <!-- MAIN SEARCH WRAP -->
+                <div class="main-search-wrap">
+                  <div class="main-search col-sm-8 justify-content-md-center col-md-6 col-lg-5 col-xl-3">
+                    <form class="form-inline">
+                      <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search" />
+                        <button class="btn input-group-addon" type="submit"><span class="sr-only">Search</span><i class="fa fa-search"></i></button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- / MAIN SEARCH WRAP -->
+
+                <!-- LOADER -->
+                <?php include_once('dist/includes/loader.inc.php'); ?>
               </div>
-              <!-- / MAIN SEARCH WRAP -->
-
-              <!-- LOADER -->
-              <?php include_once('dist/includes/loader.inc.php'); ?>
-
+              <!-- / PAGE HEADER INNER -->
             </div>
             <!-- / PAGE HEADER -->
             
@@ -152,37 +155,8 @@
               </div>
             </div>
             
-            <hr />
-
-            <div id="split-meta-content" class="split-meta-content container mt-5">
-              <div class="row">
-                
-                <div class="col-md-6 split-meta-content__col">
-                    <a href="<?php echo $root ?>/category" class="split-meta-content__block">
-                      <div class="ami-meta">
-                        <div class="ami-meta__cover-img">
-                          <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
-                        </div>
-                      </div>
-                     <h3 class="split-meta-content__block-h">Need some help?</h3>
-                      <p class="split-meta-content__block-p">If you have questions or can't find what you're looking for, we're here for you. Click here to get in touch!</p>
-                    </a>
-                </div>
-
-                <div class="col-md-6 split-meta-content__col">
-                    <a href="<?php echo $root ?>/category" class="split-meta-content__block">
-                      <div class="ami-meta">
-                        <div class="ami-meta__cover-img">
-                          <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
-                        </div>
-                      </div>
-                      <h3 class="split-meta-content__block-h">Keep on learning</h3>
-                      <p class="split-meta-content__block-p">Discover ways to communicate with your customers to increase engagement on the Customer.io blog.</p>
-                    </a>                  
-                </div>
-
-              </div>
-            </div>
+            <!-- META -->
+          <?php include_once('dist/includes/meta-content.inc.php'); ?>
 
 
           </div>

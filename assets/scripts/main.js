@@ -47,6 +47,76 @@
           });
         }
 
+
+        // TOGGLE THEME
+        function toggleThemeInit() {
+
+          // THEME 1
+          // Change theme and save with cookie - toggle
+          $(".toggle-theme1").click(function () {
+
+              // Remove current theme
+              $('body').removeClass(function (index, css) {
+                  return (css.match(/(^|\s)theme\S+/g) || []).join(' ');
+              });
+            
+              // If the class isn't already added, then add it
+              if (!$("body").hasClass("theme1")) {
+                $("body").addClass("theme1");
+                localStorage.theme = "theme1";
+              }
+          });
+
+          // THEME 2
+          // Change theme and save with cookie - toggle
+          $(".toggle-theme2").click(function () {
+
+              // Remove current theme
+              $('body').removeClass(function (index, css) {
+                  return (css.match(/(^|\s)theme\S+/g) || []).join(' ');
+              });
+            
+              // If the class isn't already added, then add it
+              if (!$("body").hasClass("theme2")) {
+                $("body").addClass("theme2");
+                localStorage.theme = "theme2";
+              }
+          });
+
+          // THEME 3
+          // Change theme and save with cookie - toggle
+          $(".toggle-theme3").click(function () {
+
+              // Remove current theme
+              $('body').removeClass(function (index, css) {
+                  return (css.match(/(^|\s)theme\S+/g) || []).join(' ');
+              });
+            
+              // If the class isn't already added, then add it
+              if (!$("body").hasClass("theme3")) {
+                $("body").addClass("theme3");
+                localStorage.theme = "theme3";
+              }
+          });
+
+          // Check the sessionStorage property and add class
+           if ('theme1' in localStorage) {
+             // add class setting
+             $("body").addClass(localStorage.theme);
+           }
+
+           if ('theme2' in localStorage) {
+             // add class setting
+             $("body").addClass(localStorage.theme);
+           }
+
+           if ('theme3' in localStorage) {
+             // add class setting
+             $("body").addClass(localStorage.theme);
+           }
+       }
+
+
       
         // WAYPOINTS
         function waypointsInit() {
@@ -155,6 +225,7 @@
         checkImages();
         waypointsInit();
         scrollButtons();
+        toggleThemeInit();
         Barba.Dispatcher.on('linkClicked', function() {
           // Scroll to the top of the current slide
           $(".barba-container").fadeOut(250, function(){
@@ -169,6 +240,7 @@
           scrollButtons();
           loaderAnim();
           onURLChange();
+          toggleThemeInit();
           waypointsInit();
         });
 

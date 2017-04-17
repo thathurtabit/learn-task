@@ -17,21 +17,24 @@
           
             <!-- PAGE HEADER -->
             <div class="jumbotron text-center">
-              <div class="plane-intro">
-                <div class="plane-intro__cover-img">
-                  <img src="<?php echo $root; ?>/dist/images/plane.png" class="img-fluid plane-intro__plane" alt="Customer.io Plane" />
-                  <img src="<?php echo $root; ?>/dist/images/cloud1.png" class="img-fluid plane-intro__cloud1" alt="Cloud" />
-                  <img src="<?php echo $root; ?>/dist/images/cloud2.png" class="img-fluid plane-intro__cloud2" alt="Cloud" />
-                  <img src="<?php echo $root; ?>/dist/images/cloud3.png" class="img-fluid plane-intro__cloud3" alt="Cloud" />
+              <!-- PAGE HEADER INNER -->
+              <div class="jumbotron-inner">
+                <div class="plane-intro">
+                  <div class="plane-intro__cover-img">
+                    <img src="<?php echo $root; ?>/dist/images/plane.png" class="img-fluid plane-intro__plane" alt="Customer.io Plane" />
+                    <img src="<?php echo $root; ?>/dist/images/cloud1.png" class="img-fluid plane-intro__cloud1" alt="Cloud" />
+                    <img src="<?php echo $root; ?>/dist/images/cloud2.png" class="img-fluid plane-intro__cloud2" alt="Cloud" />
+                    <img src="<?php echo $root; ?>/dist/images/cloud3.png" class="img-fluid plane-intro__cloud3" alt="Cloud" />
+                  </div>
+
                 </div>
+                <h1 class="display-3 text-center">Developer Documentation</h1>
+                <p>What you need to know to integrate with Customer.io</p>
 
+                <!-- LOADER -->
+                <?php include_once('dist/includes/loader.inc.php'); ?>
               </div>
-              <h1 class="display-3 text-center">Developer Documentation</h1>
-              <p>What you need to know to integrate with Customer.io</p>
-
-              <!-- LOADER -->
-              <?php include_once('dist/includes/loader.inc.php'); ?>
-              
+              <!-- / PAGE HEADER INNER -->
             </div>
             <!-- / PAGE HEADER -->
             
@@ -109,7 +112,7 @@
               <div class="card">
                 <div class="card-header" role="tab" id="headingTwo">
                   <h5 class="mb-0">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       Integrating With 3rd Parties
                     </a>
                   </h5>
@@ -127,7 +130,7 @@
               <div class="card">
                 <div class="card-header" role="tab" id="headingThree">
                   <h5 class="mb-0">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Getting Data Out Of Customer.io
                     </a>
                   </h5>
@@ -157,37 +160,8 @@
 
             </div>
             
-            <hr />
-
-            <div id="split-meta-content" class="split-meta-content container mt-5">
-              <div class="row">
-                
-                <div class="col-md-6 split-meta-content__col">
-                    <a href="<?php echo $root ?>/category" class="split-meta-content__block">
-                      <div class="ami-meta">
-                        <div class="ami-meta__cover-img">
-                          <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
-                        </div>
-                      </div>
-                     <h3 class="split-meta-content__block-h">Need some help?</h3>
-                      <p class="split-meta-content__block-p">If you have questions or can't find what you're looking for, we're here for you. Click here to get in touch!</p>
-                    </a>
-                </div>
-
-                <div class="col-md-6 split-meta-content__col">
-                    <a href="<?php echo $root ?>/category" class="split-meta-content__block">
-                      <div class="ami-meta">
-                        <div class="ami-meta__cover-img">
-                          <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" />
-                        </div>
-                      </div>
-                      <h3 class="split-meta-content__block-h">Keep on learning</h3>
-                      <p class="split-meta-content__block-p">Discover ways to communicate with your customers to increase engagement on the Customer.io blog.</p>
-                    </a>                  
-                </div>
-
-              </div>
-            </div>
+            <!-- META -->
+          <?php include_once('dist/includes/meta-content.inc.php'); ?>
 
 
           </div>
