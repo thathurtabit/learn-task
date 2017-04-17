@@ -8,6 +8,16 @@
 	justify-content: center;
 }
 
+.theme4 .navbar {
+	transition: background $transition-time ease-in-out;
+	transition-delay: $transition-time;
+	background: transparent;
+}
+
+.theme4.sps--blw .navbar {
+	background: $brand-primary;
+}
+
 .navbar-brand {
 	background: url(../images/logo.svg) no-repeat;
 	height: $navbar-height;

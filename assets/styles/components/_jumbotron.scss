@@ -60,10 +60,27 @@
 
 
 // THEME SWITCH
-.theme4 .jumbotron-inner,
-.theme3 .jumbotron-inner  {
-	background: rgba(56,151,152,0.75);
+.theme1 .jumbotron-inner {
+	background: url(../images/bg-diag-white.png) fixed;
 }
+.theme3 .jumbotron-inner {
+	background: rgba(56,151,152,0.35);
+}
+.theme4 .jumbotron-inner  {
+	//background: rgba(56,151,152,0.9) url(../images/bg-diag-white.png) fixed;
+	&::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: -webkit-linear-gradient(-45deg, #306ab2 0%, #00e1ed 70%, #00e1ed 70%);
+	opacity: 0.5;
+	}
+}
+
+
 
 
 
