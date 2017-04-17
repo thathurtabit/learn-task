@@ -25,6 +25,42 @@
     }
 }
 
+
+// THEME SWITCH
+.theme1 .jumbotron {
+	background: darken($brand-primary, 5%) url(../images/bg-diag.png) fixed;
+
+	h1, p {
+		z-index: 5;
+	}
+
+}
+
+// THEME SWITCH
+.theme2 .jumbotron {
+	background: url(../images/school.png) fixed;
+
+	h1 {
+		color: lighten($body-color, 20%);
+	}
+	p {
+		color: $brand-primary;
+	}
+}
+
+// THEME SWITCH
+.theme3 .jumbotron {
+	background: url(../images/bg-abstract.jpg) fixed;
+
+	h1 {
+		color: lighten($body-color, 20%);
+	}
+	p {
+		color: $white;
+	}
+}
+
+
 .jumbotron-inner {
 	transition: opacity $transition-time / 2 ease-out, transform $transition-time $transition-type;
 	display: flex;
@@ -43,6 +79,8 @@
 		opacity: 1;
 	}
 }
+
+
 
 
 .jumbotron h1 {
@@ -67,6 +105,10 @@
 	color: rgba(255,255,255,0.75);
 }
 
+
+.theme3 .ami-intro__text p {
+	color: $brand-primary;
+}
 
 .ami-intro__text {
 	transition: opacity $transition-time / 2 ease-out, transform $transition-time $transition-type;
@@ -192,6 +234,20 @@
 	justify-content: center;
 }
 
+.plane-intro__plane {
+	width: 80px;
+	height: 42px;
+	background: url(../images/plane.png);
+	position: absolute;
+}
+
+.theme2 .plane-intro__plane {
+	background: url(../images/plane-bp.png);
+}
+
+.theme3 .plane-intro__plane {
+	background: url(../images/plane-gray.png);
+}
 
 .plane-intro__plane,
 .plane-intro__cloud1,

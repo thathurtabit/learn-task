@@ -22,7 +22,7 @@
               <div class="jumbotron-inner">
                 <div class="plane-intro">
                   <div class="plane-intro__cover-img">
-                    <img src="<?php echo $root; ?>/dist/images/plane.png" class="img-fluid plane-intro__plane" alt="Customer.io Plane" />
+                    <span class="img-fluid plane-intro__plane"></span>
                     <img src="<?php echo $root; ?>/dist/images/cloud1.png" class="img-fluid plane-intro__cloud1" alt="Cloud" />
                     <img src="<?php echo $root; ?>/dist/images/cloud2.png" class="img-fluid plane-intro__cloud2" alt="Cloud" />
                     <img src="<?php echo $root; ?>/dist/images/cloud3.png" class="img-fluid plane-intro__cloud3" alt="Cloud" />
@@ -38,6 +38,10 @@
               </div>
               <!-- / PAGE HEADER INNER -->
 
+              <?php
+                // TOGGLE THEME
+                include_once('dist/includes/theme-toggle.inc.php');
+              ?>
             </div>
             <!-- / PAGE HEADER -->
             

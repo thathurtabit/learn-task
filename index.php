@@ -48,6 +48,11 @@
                 <?php include_once('dist/includes/loader.inc.php'); ?>
               </div>
               <!-- / PAGE HEADER INNER -->
+
+              <?php
+                // TOGGLE THEME
+                include_once('dist/includes/theme-toggle.inc.php');
+              ?>
             </div>
             <!-- / PAGE HEADER -->
             

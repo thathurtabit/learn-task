@@ -102,17 +102,17 @@
           // Check the sessionStorage property and add class
            if ('theme1' in localStorage) {
              // add class setting
-             $("body").addClass(localStorage.theme);
+             $("body").addClass('theme1');
            }
 
            if ('theme2' in localStorage) {
              // add class setting
-             $("body").addClass(localStorage.theme);
+             $("body").addClass('theme2');
            }
 
            if ('theme3' in localStorage) {
              // add class setting
-             $("body").addClass(localStorage.theme);
+             $("body").addClass('theme3');
            }
        }
 

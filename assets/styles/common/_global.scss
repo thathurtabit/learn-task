@@ -125,3 +125,23 @@ body {
 .bp {
 	color: $brand-primary;
 }
+
+
+.toggle-theme-wrap {
+    position: absolute;
+    right: 15px;
+    top: $navbar-height + 20;
+    z-index: 10;
+}
+
+.toggle-theme-wrap button {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background: $white;
+    cursor: pointer;
+    border: 0;
+    margin-bottom: 8px;
+    display: block;
+    box-shadow: inset 0 0 0 3px $brand-primary;
+}
