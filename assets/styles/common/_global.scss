@@ -13,6 +13,14 @@ a:visited {
 	text-decoration: none;
 }
 
+@include media-breakpoint-down(sm) {
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+}
+
 html {
     overflow-x: hidden;
 }
@@ -79,6 +87,7 @@ body {
     font-size: 1.2rem;
     color: lighten($body-color, 20%);
     position: relative;
+    text-align: center;
 
     .waypoint-active & {
         opacity: 1;

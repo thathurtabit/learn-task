@@ -156,8 +156,8 @@
 .sticky-content__text-col,
 .sticky-content__nav-col {
 	padding-bottom: 5rem;
-	padding-left: $grid-gutter-width-base + 10;
-	padding-right: $grid-gutter-width-base + 10;
+	padding-left: $grid-gutter-width-base / 2;
+	padding-right: $grid-gutter-width-base / 2;
 
 	// RESPONSIVE UP
 	@include media-breakpoint-up(md) {
@@ -185,16 +185,14 @@
 
 
 .fixedsticky {
-	//transition: opacity $transition-time $transition-type;
 	transition-delay: $transition-time * 3;
-	//opacity: 0.01;
-	top: $navbar-height + 20;
 	left: 0;
-	width: 100%;
-	position: sticky;
+	position: relative;
 
 	.waypoint-active & {
-		position: sticky;
-		//opacity: 1;
+		@include media-breakpoint-up(md) {
+			position: sticky;
+			top: $navbar-height + 20;
+		}
 	}
 }
