@@ -5,11 +5,17 @@
 		content: "";
 		background: $white;
 		position: absolute;
-		left: -40px;
-		right: -40px;
+		left: 0;
+		right: 0;
 		bottom: -50px;
 		top: -40px;
-		z-index: -1;	
+		z-index: -1;
+
+		// RESPONSIVE DOWN
+		@include media-breakpoint-up(md) {
+			left: -40px;
+			right: -40px;
+		}
 	}
 }
 

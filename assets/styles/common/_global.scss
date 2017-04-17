@@ -13,6 +13,10 @@ a:visited {
 	text-decoration: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
 	background: darken($white, 3%);
 	overflow-x: hidden;

@@ -17,6 +17,6 @@
     }
   },
   "config": {
-    "devUrl": "http://localhost/customer.io-learn"
+    "devUrl": "http://localhost/customer.io-learn/learn-task"
   }
 }
