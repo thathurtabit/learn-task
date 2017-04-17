@@ -68,6 +68,15 @@
 	font-size: 0.9rem;
 	text-align: center;
 
+	.theme2 &,
+	.theme3 & {
+		background: $white;
+
+		@include media-breakpoint-up(md) {
+			background: darken($white, 5%);
+		}
+	}
+
 	&::placeholder {
 		color: lighten($gray, 50%);
 	}

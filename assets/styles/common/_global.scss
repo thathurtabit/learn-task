@@ -44,7 +44,8 @@ body {
 
 }
 
-.main-page {
+.main-page,
+#main-footer {
     transition: transform $transition-time $transition-type, opacity $transition-time ease-out;
     transform-delay: $transition-time;
 	position: relative;
@@ -56,6 +57,10 @@ body {
         opacity: 1;
         transform: translate(0, 0);
     }
+}
+
+#main-footer {
+    z-index: 1;
 }
 
 .sub-title {

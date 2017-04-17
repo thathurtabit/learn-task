@@ -1,10 +1,3 @@
-<?php
-// NOTE: You'll need to change this on the live server
-
-$root = "http://localhost/customer.io-learn";
-
-?>
-
 <header class="navbar navbar-inverse fixed-top">
   
   <a class="navbar-brand" href="<?php echo $root ?>" title="<?php echo $websiteName; ?>"><h1 class="sr-only"><?php echo $websiteName; ?></h1></a>
