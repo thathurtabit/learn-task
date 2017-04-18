@@ -59,7 +59,7 @@ body {
 .main-page,
 #main-footer {
     transition: transform $transition-time $transition-type, opacity $transition-time ease-out;
-    transform-delay: $transition-time;
+    transition-delay: $transition-time;
 	position: relative;
 	z-index: 2;
     opacity: 0;

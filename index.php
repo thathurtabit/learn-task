@@ -24,7 +24,11 @@
                 </div>
                 <div class="ami-intro">
                   <div class="ami-intro__cover-img">
-                    <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="img-fluid" alt="Ami" />
+                    <img src="<?php echo $root; ?>/dist/images/ami-small.png" class="ami-body img-fluid" alt="Ami" />
+                    <img src="<?php echo $root; ?>/dist/images/ami-small-wing-l.png" class="ami-wing-l img-fluid" alt="Ami" />
+                    <img src="<?php echo $root; ?>/dist/images/ami-small-wing-r.png" class="ami-wing-r img-fluid" alt="Ami" />
+                    <img src="<?php echo $root; ?>/dist/images/ami-small-foot.png" class="ami-foot-l img-fluid" alt="Ami" />
+                    <img src="<?php echo $root; ?>/dist/images/ami-small-foot.png" class="ami-foot-r img-fluid" alt="Ami" />
                   </div>
 
                 </div>

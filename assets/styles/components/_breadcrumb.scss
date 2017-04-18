@@ -4,6 +4,11 @@
     position: relative;
     text-align: center;
     width: 100%;
+    top: 20px;
+
+    @include media-breakpoint-up(lg) {
+    	top: 5px;
+    }
 
     &::before {
     	content: "";
@@ -11,7 +16,10 @@
     	left: 0;
     	height: 13px;
     	width: 0;
-    	border-left: 1px dotted $brand-primary;
+    	
+    	@include media-breakpoint-up(xl) {
+    		border-left: 1px dotted $brand-primary;
+    	}
     }
 
     .page--home & {
@@ -28,19 +36,20 @@
 	color: lighten($body-color, 40%);
 	display: inline-block;
     float: none;
-    max-width: 33%;
+    max-width: 32%;
     white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	margin-right: 15px;
 	padding-right: 0;
+	vertical-align: top;
 
 	&:before {
 		display: none !important;
 		padding: 0 !important;
 	}
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
     	float: left;
     }
 
